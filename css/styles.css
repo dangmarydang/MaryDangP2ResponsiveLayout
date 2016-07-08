@@ -1,0 +1,256 @@
+/*=============================
+Base Element Styles
+=============================*/
+
+body {
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+  color: #404040;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+/*=============================
+Base Layout Styles
+=============================*/
+
+/* Header */
+header {
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+  background-color: ;
+}
+
+#name {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin: 15px 0;
+  font-size: 1.75em;
+  font-weight: 700;
+  line-height: 0.8em;
+
+}
+
+/* Navigation */
+nav {
+  text-align: center;
+  padding: 10px 0;
+}
+
+nav ul {
+
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+nav li {
+  background-color: #fff;
+  font-size: 0.875em;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+nav a {
+  font-weight: 800;
+  padding: 15px 10px;
+}
+
+/* Introduction */
+#intro {
+  margin: 0;
+  padding: 10%;
+  list-style: none;
+  text-align: center;
+  font-weight: 200;
+}
+
+.profile-image {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+/* Portfolio */
+#portfolio {
+  background-color: #fff;
+  margin: 0px;
+  padding: 10px 0;
+  text-align: center;
+}
+
+#portfolio div {
+  list-style: none;
+  padding: 0;
+}
+
+#portfolio p {
+  padding: 0 10% 5% 10%;
+  font-weight: 200;
+}
+
+.project-img {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+
+/* Contact */
+#contact {
+  margin: 0;
+  padding: 5% 10%;
+  list-style: none;
+  text-align: center;
+  width: 80%;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 10%;
+}
+
+#contact li {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#contact p {
+  font-weight: 200;
+}
+/* Footer */
+#footer {
+  border-top: 1px solid black;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.footer-name {
+  float: left;
+  font-size: 1em;
+}
+
+.nav-to-top {
+  font-size: 0.9em;
+  float: right;
+}
+
+.footer-nav {
+  display: none;
+}
+/*=============================
+Media Queries
+=============================*/
+@media screen and (min-width: 768px) {
+
+  /* Header */
+  nav li {
+    display: inline-block;
+    background-color: #f0f0f0;
+  }
+
+  /* Introduction */
+  #intro {
+    text-align: left;
+    font-size: 1.20em;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .profile-image {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    padding-left: 20px;
+    padding-right: 0;
+    padding-bottom: 10%;
+  }
+
+  /* Portfolio */
+  #portfolio {
+    float: left;
+    padding-bottom: 50px;
+  }
+
+  #portfolio div {
+    float: left;
+    width: 45%;
+    margin: 1%;
+    padding-left: 2%;
+  }
+
+  .project-img {
+    width: 100%;
+    padding: 0;
+  }
+
+  /* Contact */
+  #contact,
+  #footer {
+    float: left;
+  }
+  /* Footer */
+  .nav-to-top {
+    display: none;
+  }
+
+  .footer-nav {
+    display: block;
+    float: right;
+    font-size: 0.9em;
+  }
+
+  .footer-nav ul {
+    margin: 0;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+
+  /* Header */
+  nav {
+    background: none;
+    float: right;
+    margin-right: 5%;
+    margin-top: 20px;
+    text-align: right;
+    width: 45%;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  #name {
+    float: left;
+    margin-left: 2.5%;
+    text-align: left;
+    width: 40%;
+  }
+
+  /* Portfolio */
+  #portfolio div {
+    width: 30%;
+    margin: 1.5%;
+    padding-left: 0;
+  }
+
+}
